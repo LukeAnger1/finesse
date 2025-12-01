@@ -1,6 +1,4 @@
-"""Core data structures for the Finesse FSM toolkit."""
+from .fsm import FSM, State, Transition
+from .expr import Expr, Sig, Const, UnaryOp, BinOp
 
-from .fsm import FiniteStateMachine, State, Transition
-from .io import Signal
-
-__all__ = ["FiniteStateMachine", "State", "Transition", "Signal"]
+__all__ = ["FSM", "State", "Transition", "Expr", "Sig", "Const", "UnaryOp", "BinOp"]

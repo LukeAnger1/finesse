@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> IDLE
+    state IDLE
+    state BUSY
+    state DONE
+    IDLE --> BUSY
+    BUSY --> DONE
+    DONE --> IDLE
