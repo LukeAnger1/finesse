@@ -106,7 +106,6 @@ class UnaryOp(Expr):
             return f"!({self.expr.to_verilog()})"
         raise ValueError(f"Unknown unary op {self.op!r}")
 
-
 @dataclass(frozen=True, eq=False)
 class BinOp(Expr):
     op: str   # "and", "or", "xor", "eq", "ne", "lt", "le", "gt", "ge"
